@@ -1,0 +1,50 @@
+A készítés dokumentálása:
+    1. Tervezés:
+        - vizuálisan hogyan fog kinézni az oldal
+        - funkciók:
+            - fetch
+            - backend-i validáció
+            - frontend-i validáció
+            - action button-ok letiltása hiba esetén
+            - errorok megjelenítése
+    2. Készítés:
+        - React boiler plate elkészítése
+        - UI elkészítése CSS és MUI segítségével
+        - Backend endpointok + validáció elkészítése
+        - Fetch.js-ben fetch funkció elkészítése
+        - App.js-ben fetchek beépítése
+        - Frontend-i validáció elkészítése
+        - Errorok megjelenítése és elrejtése
+        - Gombok letiltása, amíg hiba van, vagy üres az input mező
+        - Refactoring: 
+            - a gombok letiltásáért felelős funkció kiszervezése külső komponensbe
+            - a validációért felelős funkció kiszervezése külső komponensbe
+
+Frontend tesztelése:
+    1. Fetch funkciók ellenőrzése
+    2. Textfield + button disabled:
+        - jó adatokkal
+        - negatív adatokkal
+        - betűkkel
+        - túl nagy adatokkal
+    3. Error display:
+        - Textfield alatt
+        - HTTP error visszajelzése
+    4. Reszponzivitás: 300-1920px között, relatív mértékegységeket használva
+
+Backend tesztelése:
+    1. Az endpointok ellenőrzése console.log-gal
+    2. Az endpointok ellenőrzése Postman-nel
+    3. Utility funkciók ellenőrzése console.log-gal
+    4. Utility funkciók ellenőrzése Postman-nel
+
+Az alkalmazás elindítása:
+    1. Klónozás Git-tel
+    2. Terminált nyitni és cd-vel a playing_with_math mappába navigálni
+    3. npm install
+    4. Új terminált nyitni
+    5. Új terminálban cd-vel api mappába navigálni
+    6. Új terminálban node index.js
+    7. Régi terminálban npm start
+    8. Meggyőződni arról, hogy a régi terminálban megnyitott React appunk localhost:3000-en fut-e
+    9. Amennyiben nem, úgy átírni a backendben a frontendPort-ot az aktuális portra

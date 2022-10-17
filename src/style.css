@@ -1,0 +1,83 @@
+main {
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    width: 30%;
+    transition: ease 0.3s;
+    border: 0.25rem solid rgba(141, 173, 179, 0.684);
+    background-color: rgba(213, 239, 247, 0.84);
+    border-radius: 0.85rem;
+    min-height: 60vh;
+}
+
+main h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2.25rem;
+}
+
+main hr {
+    margin-bottom: 2rem;
+    height: 0.125rem;
+    background-color: black;
+}
+
+.textField {
+    width: 75%;
+    margin-bottom: 0;
+}
+
+main label {
+    font-size: 1rem;
+    color: red;
+    max-width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.resultBox {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.errorContainer {
+    color: red;
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1500px) {
+    main {
+        width: 45%;
+        transition: ease 0.3s;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        width: 65%;
+        transition: ease 0.3s;
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 460px) {
+    main {
+        padding: 0.5rem;
+        width: 85%;
+        transition: ease 0.3s;
+    }
+
+    main h1 {
+        font-size: 1.75rem;
+    }
+
+    .textField {
+        max-width: 100%;
+    }
+}
